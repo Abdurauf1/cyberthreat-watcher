@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+# 🛡️ CyberThreat Watcher — Threat Monitoring Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack cybersecurity dashboard that monitors, detects, and visualizes cyber threats in real-time. Built with React, Node.js, MongoDB, and WebSockets.
 
-Currently, two official plugins are available:
+![screenshot](https://your-image-link-if-any.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔐 JWT Authentication & Role-Based Access
+- ⚠️ Real-time Threat Alerts (via WebSocket)
+- 📈 Dashboard with Analytics & Charts
+- 🗃️ Threat Logs with Search & Filters
+- 🔍 Vulnerability Scan for IP/Domain
+- 🛠️ Admin Settings & API Key Management
+- 📤 Exportable Threat Reports (CSV/PDF)
+- 🌙 Dark Mode UI (TailwindCSS)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧱 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Frontend
+- React + TypeScript
+- Tailwind CSS
+- Recharts / Chart.js
+- Axios
+- Socket.io Client
+- React Router DOM
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Backend
+- Node.js + Express
+- MongoDB (Mongoose)
+- Socket.io
+- JSON Web Tokens (JWT)
+- bcryptjs (password hashing)
+- dotenv (env configs)
+- [Optional] Redis / External APIs
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🗂️ Folder Structure
+
