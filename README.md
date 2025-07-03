@@ -35,5 +35,3 @@ A full-stack cybersecurity dashboard that monitors, detects, and visualizes cybe
 - bcryptjs (password hashing)
 - dotenv (env configs)
 - [Optional] Redis / External APIs
-
----
