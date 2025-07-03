@@ -2,8 +2,6 @@
 
 A full-stack cybersecurity dashboard that monitors, detects, and visualizes cyber threats in real-time. Built with React, Node.js, MongoDB, and WebSockets.
 
-![screenshot](https://your-image-link-if-any.com)
-
 ---
 
 ## 📌 Features
@@ -39,6 +37,3 @@ A full-stack cybersecurity dashboard that monitors, detects, and visualizes cybe
 - [Optional] Redis / External APIs
 
 ---
-
-## 🗂️ Folder Structure
-
